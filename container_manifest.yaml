@@ -1,9 +1,8 @@
 # via https://developers.google.com/compute/docs/containers/container_vms
-version: v1beta1
+version: v1beta2
 containers:
   - name: dart-shelf-server
     image: kevmoo/docker-dart-sample
-    command: ['dart', 'bin/server.dart']
     ports:
       - name: www
         hostPort: 80
